@@ -1,1 +1,143 @@
-/* Seu estilo */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('assets/background.webp');
+  background-size: cover;
+  height: 100vh; /* ?  */
+  color: #ffffff;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  display: grid;
+  place-items: center;
+}
+
+form {
+  width: 600px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+input, textarea {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #ffffff;
+  padding: 4px 8px;
+}
+
+fieldset {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+}
+
+legend {
+  padding: 0 8px;
+}
+
+/* ! DADOS PESSOAIS ----------------------------------------------------------------------------------------------- */
+
+#dados-pessoais {
+  display: grid; /* ? https://developer.mozilla.org/en-US/docs/Web/CSS/grid */
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#dados-pessoais input {
+  width: 100%;
+}
+
+/* ! HABILIDADES ----------------------------------------------------------------------------------------------- */
+
+#habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+#habilidades > p {
+  grid-column: 1 / -1;
+  margin-bottom: 8px;
+}
+
+#habilidades label {
+  display: flex;
+  gap: 4px;
+}
+
+#habilidades label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* ! SOBRE ----------------------------------------------------------------------------------------------- */
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+#sobre > p {
+  margin-bottom: 8px;
+}
+
+#sobre div {
+  position: relative;
+}
+
+#sobre span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  transform: translate(-40%, -50%);
+}
+
+/* ! FEEDBACK ----------------------------------------------------------------------------------------------- */
+
+#feedback > p {
+  margin-bottom: 8px;
+}
+
+#feedback label {
+  display: flex;
+  gap: 3px;
+}
+
+#feedback > div {
+  display: flex;
+  gap: 32px;
+}
+
+/* ! TERMOS ----------------------------------------------------------------------------------------------- */
+
+form > div label {
+  display: flex;
+  gap: 32px;
+}
+
+form > div {
+  margin-bottom: 32px;
+}
+
+#button {
+  width: 100%;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2ebb30;
+  color: #ffffff;
+  font-weight: 700;
+}
