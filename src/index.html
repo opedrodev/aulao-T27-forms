@@ -4,19 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Forms</title>
   </head>
   <body>
+    <form id="forms">
+      <!-- ! DADOS PESSOAIS -->
+      <fieldset id="dados-pessoais">
+        <legend>Dados Pessoais</legend>
 
-    <!-- TODO: DADOS PESSOAIS -->
+        <label for="firstName">
+          <p>Nome</p>
+          <input type="text" id="firstName" />
+        </label>
+        <label for="lastName">
+          <p>Sobrenome</p>
+          <input type="text" id="lastName" />
+        </label>
+        <label for="email">
+          <p>Email</p>
+          <input type="text" id="email" />
+        </label>
+        <label for="bornDate">
+          <p>Data de nascimento</p>
+          <input type="date" id="bornDate" />
+        </label>
+      </fieldset>
 
-    <!-- TODO: HABILIDADES -->
+      <!-- ! HABILIDADES -->
+      <fieldset id="habilidades">
+        <legend>Habilidades</legend>
 
-    <!-- TODO: SOBRE -->
+        <p>Selecione suas habilidades</p>
 
-    <!-- TODO: FEEDBACK -->
+        <section id="hardskills">
+          <label for="git">
+            <input type="checkbox" name="git" id="git" />
+            <p>Git</p>
+          </label>
+          <label for="html">
+            <input type="checkbox" name="html" id="html" />
+            <p>HTML</p>
+          </label>
+          <label for="javascript">
+            <input type="checkbox" name="javascript" id="javascript" />
+            <p>JavaScript</p>
+          </label>
+          <label for="css">
+            <input type="checkbox" name="css" id="css" />
+            <p>CSS</p>
+          </label>
+        </section>
 
-    <!-- TODO: AGREEMENT -->
+        <section id="softskills">
+          <label for="comunicacao">
+            <input type="checkbox" name="comunicacao" id="comunicacao" />
+            <p>Comunicação</p>
+          </label>
+          <label for="lideranca">
+            <input type="checkbox" name="lideranca" id="lideranca" />
+            <p>Liderança</p>
+          </label>
+          <label for="empatia">
+            <input type="checkbox" name="empatia" id="empatia" />
+            <p>Empatia</p>
+          </label>
+          <label for="colaboracao">
+            <input type="checkbox" name="colaboracao" id="colaboracao" />
+            <p>Colaboração</p>
+          </label>
+        </section>
+      </fieldset>
+
+      <!-- ! SOBRE -->
+      <fieldset id="sobre">
+        <legend>Sobre</legend>
+
+        <p>Nos conte um pouco sobre você</p>
+
+        <div>
+          <textarea name="sobre" id="sobre" cols="30" rows="10"></textarea>
+          <span>250</span>
+        </div>
+      </fieldset>
+
+      <!-- ! FEEDBACK -->
+      <fieldset id="feedback">
+        <legend>Feedback</legend>
+
+        <p>Como você avalia esse formulário?</p>
+
+        <div>
+          <label for="nota1">
+            <p>1</p>
+            <input type="radio" name="notas" value="1" />
+          </label>
+          <label for="nota2">
+            <p>2</p>
+            <input type="radio" name="notas" value="2" />
+          </label>
+          <label for="nota3">
+            <p>3</p>
+            <input type="radio" name="notas" value="3" />
+          </label>
+          <label for="nota4">
+            <p>4</p>
+            <input type="radio" name="notas" value="4" />
+          </label>
+          <label for="nota5">
+            <p>5</p>
+            <input type="radio" name="notas" value="5" />
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- ! AGREEMENT -->
+      <div>
+        <label for="agreement">
+          <p>Você concorda com nossos termos de Politica de Privacidade?</p>
+
+          <input type="checkbox" name="agreement" id="agreement" />
+        </label>
+      </div>
+
+      <button type="button" id="button">Enviar Formulário</button>
+    </form>
 
     <script src="script.js"></script>
   </body>
