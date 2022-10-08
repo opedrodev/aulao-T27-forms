@@ -141,3 +141,7 @@ form > div {
   color: #ffffff;
   font-weight: 700;
 }
+
+#button:disabled {
+  
+}
